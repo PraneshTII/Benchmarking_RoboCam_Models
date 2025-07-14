@@ -1,0 +1,372 @@
+INFO: STARTING!
+WARN: Unconsumed cmdline flags: --verbose=true
+INFO: Log parameter values verbosely: [1]
+INFO: Min num runs: [50]
+INFO: Min runs duration (seconds): [1]
+INFO: Max runs duration (seconds): [150]
+INFO: Inter-run delay (seconds): [-1]
+INFO: Number of prorated runs per second: [-1]
+INFO: Num threads: [-1]
+INFO: Use caching: [0]
+INFO: Benchmark name: []
+INFO: Output prefix: []
+INFO: Min warmup runs: [1]
+INFO: Min warmup runs duration (seconds): [0.5]
+INFO: Run w/o invoking kernels: [0]
+INFO: Report the peak memory footprint: [0]
+INFO: Memory footprint check interval (ms): [1]
+INFO: Graph: [/home/scmd/yolov8n_640.tflite]
+INFO: Input layers: []
+INFO: Input shapes: []
+INFO: Input value ranges: []
+INFO: Input value files: []
+INFO: Allow fp16: [0]
+INFO: Require full delegation: [0]
+INFO: Enable op profiling: [1]
+INFO: Max initial profiling buffer entries: [1024]
+INFO: Allow dynamic increase on profiling buffer entries: [0]
+INFO: CSV File to export profiling data to: []
+INFO: Print pre-invoke interpreter state: [0]
+INFO: Print post-invoke interpreter state: [0]
+INFO: Release dynamic tensor memory: [0]
+INFO: Optimize memory usage for large tensors: [0]
+INFO: Disable delegate clustering: [0]
+INFO: File path to export outputs layer to: []
+INFO: Tensor name display length: [25]
+INFO: Tensor type display length: [15]
+INFO: Tensor allocation type display length: [18]
+INFO: print out all supported flags: [0]
+INFO: #threads used for CPU inference: [-1]
+INFO: Max number of delegated partitions: [0]
+INFO: Min nodes per partition: [0]
+INFO: Index of the first node that could be delegated: [0]
+INFO: Index of the first node that could be delegated: [2147483647]
+INFO: Directory for delegate serialization: []
+INFO: Model-specific token/key for delegate serialization.: []
+INFO: print out all supported flags: [0]
+INFO: #threads used for CPU inference: [-1]
+INFO: Max number of delegated partitions: [0]
+INFO: Min nodes per partition: [0]
+INFO: Index of the first node that could be delegated: [0]
+INFO: Index of the first node that could be delegated: [2147483647]
+INFO: Directory for delegate serialization: []
+INFO: Model-specific token/key for delegate serialization.: []
+INFO: Use xnnpack: [0]
+INFO: External delegate path: [/nix/store/nxds5qr80pafcvcx9yvsvn7wg14qk7qg-vx-delegate-aarch64-unknown-linux-gnu-v-tf2.14.0/lib/libvx_delegate.so]
+INFO: External delegate options: []
+INFO: Loaded model /home/scmd/yolov8n_640.tflite
+INFO: Vx delegate: allowed_cache_mode set to 0.
+INFO: Vx delegate: device num set to 0.
+INFO: Vx delegate: allowed_builtin_code set to 0.
+INFO: Vx delegate: error_during_init set to 0.
+INFO: Vx delegate: error_during_prepare set to 0.
+INFO: Vx delegate: error_during_invoke set to 0.
+INFO: EXTERNAL delegate created.
+INFO: Explicitly applied EXTERNAL delegate, and the model graph will be completely executed by the delegate.
+INFO: The input model file size (MB): 3.33301
+INFO: Initialized session in 37.954ms.
+INFO: Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+INFO: count=1 curr=19350481
+
+INFO: Running benchmark for at least 50 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
+INFO: count=50 first=145447 curr=149908 min=145172 max=150630 avg=146502 std=1444
+
+INFO: Inference timings in us: Init: 37954, First inference: 19350481, Warmup (avg): 1.93505e+07, Inference (avg): 146502
+INFO: Note: as the benchmark tool itself affects memory footprint, the following is only APPROXIMATE to the actual memory footprint of the model at runtime. Take the information at your discretion.
+INFO: Memory footprint delta from the start of the tool (MB): init=9.94141 overall=279.23
+INFO: Profiling Info for Benchmark Initialization:
+============================== Run Order ==============================
+	                             [node type]	  [first]	 [avg ms]	     [%]	  [cdf%]	  [mem KB]	[times called]	[Name]
+	                 ModifyGraphWithDelegate	    2.602	    2.602	 46.021%	 46.021%	  2036.000	        1	ModifyGraphWithDelegate/0
+	                         AllocateTensors	    3.052	    3.052	 53.979%	100.000%	     0.000	        1	AllocateTensors/0
+
+============================== Top by Computation Time ==============================
+	                             [node type]	  [first]	 [avg ms]	     [%]	  [cdf%]	  [mem KB]	[times called]	[Name]
+	                         AllocateTensors	    3.052	    3.052	 53.979%	 53.979%	     0.000	        1	AllocateTensors/0
+	                 ModifyGraphWithDelegate	    2.602	    2.602	 46.021%	100.000%	  2036.000	        1	ModifyGraphWithDelegate/0
+
+Number of nodes executed: 2
+============================== Summary by node type ==============================
+	                             [Node type]	  [count]	  [avg ms]	    [avg %]	    [cdf %]	  [mem KB]	[times called]
+	                         AllocateTensors	        1	     3.052	    53.979%	    53.979%	     0.000	        1
+	                 ModifyGraphWithDelegate	        1	     2.602	    46.021%	   100.000%	  2036.000	        1
+
+Timings (microseconds): count=1 curr=5654
+Memory (bytes): count=0
+2 nodes observed
+
+
+
+INFO: Operator-wise Profiling Info for Regular Benchmark Runs:
+============================== Run Order ==============================
+	                             [node type]	  [first]	 [avg ms]	     [%]	  [cdf%]	  [mem KB]	[times called]	[Name]
+	                             Vx Delegate	  145.367	  146.418	100.000%	100.000%	     0.000	        1	[PartitionedCall:0]:485
+
+============================== Top by Computation Time ==============================
+	                             [node type]	  [first]	 [avg ms]	     [%]	  [cdf%]	  [mem KB]	[times called]	[Name]
+	                             Vx Delegate	  145.367	  146.418	100.000%	100.000%	     0.000	        1	[PartitionedCall:0]:485
+
+Number of nodes executed: 1
+============================== Summary by node type ==============================
+	                             [Node type]	  [count]	  [avg ms]	    [avg %]	    [cdf %]	  [mem KB]	[times called]
+	                             Vx Delegate	        1	   146.418	   100.000%	   100.000%	     0.000	        1
+
+Timings (microseconds): count=50 first=145367 curr=149828 min=145089 max=150551 avg=146418 std=1442
+Memory (bytes): count=0
+1 nodes observed
+
+
+
+[     1] *************** Memory Profile Info Dump ****************
+[     2] system memory:
+[     3]   current allocation      : 0
+[     4]   maximum allocation      : 223343161
+[     5]   total allocation        : 3200968313
+[     6]   total free              : 3200968313
+[     7]   allocation count        : 176966
+[     8]   free count              : 176966
+[     9] 
+[    10] gpu memory:
+[    11]   current allocation      : 0
+[    12]   maximum allocation      : 33615072
+[    13]   total allocation        : 37006304
+[    14]   total free              : 37006304
+[    15]   allocation count        : 5937
+[    16]   free count              : 5937
+[    17] ************ end of Memory Profile Info Dump ************
