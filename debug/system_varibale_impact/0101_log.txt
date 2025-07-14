@@ -1,0 +1,460 @@
+INFO: Vx delegate: allowed_cache_mode set to 0.
+INFO: Vx delegate: device num set to 0.
+INFO: Vx delegate: allowed_builtin_code set to 0.
+INFO: Vx delegate: error_during_init set to 0.
+INFO: Vx delegate: error_during_prepare set to 0.
+INFO: Vx delegate: error_during_invoke set to 0.
+/home/scmd/yolov8n_detector_imx_res.py:188: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  return scales[0] if scales else 1.0, zero_points[0] if zero_points else 0
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+[     1] TOTAL_READ_BANDWIDTH  (MByte): 51.372143
+[     2] TOTAL_WRITE_BANDWIDTH (MByte): 39.922671
+[     3] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[     4] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[     5] DDR_READ_BANDWIDTH (MByte): 51.372143
+[     6] DDR_WRITE_BANDWIDTH (MByte): 39.922671
+[     7] GPUTOTALCYCLES: 66748626
+[     8] GPUIDLECYCLES: 8637481
+[     9] TOTAL_READ_BANDWIDTH  (MByte): 51.580608
+[    10] TOTAL_WRITE_BANDWIDTH (MByte): 39.928530
+[    11] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    12] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    13] DDR_READ_BANDWIDTH (MByte): 51.580608
+[    14] DDR_WRITE_BANDWIDTH (MByte): 39.928530
+[    15] GPUTOTALCYCLES: 73646105
+[    16] GPUIDLECYCLES: 16169438
+[    17] TOTAL_READ_BANDWIDTH  (MByte): 51.691249
+[    18] TOTAL_WRITE_BANDWIDTH (MByte): 39.921572
+[    19] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    20] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    21] DDR_READ_BANDWIDTH (MByte): 51.691249
+[    22] DDR_WRITE_BANDWIDTH (MByte): 39.921572
+[    23] GPUTOTALCYCLES: 77545981
+[    24] GPUIDLECYCLES: 19494327
+[    25] TOTAL_READ_BANDWIDTH  (MByte): 51.457287
+[    26] TOTAL_WRITE_BANDWIDTH (MByte): 39.912966
+[    27] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    28] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    29] DDR_READ_BANDWIDTH (MByte): 51.457287
+[    30] DDR_WRITE_BANDWIDTH (MByte): 39.912966
+[    31] GPUTOTALCYCLES: 72019650
+[    32] GPUIDLECYCLES: 13853216
+[    33] TOTAL_READ_BANDWIDTH  (MByte): 51.612407
+[    34] TOTAL_WRITE_BANDWIDTH (MByte): 39.917849
+[    35] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    36] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    37] DDR_READ_BANDWIDTH (MByte): 51.612407
+[    38] DDR_WRITE_BANDWIDTH (MByte): 39.917849
+[    39] GPUTOTALCYCLES: 79073650
+[    40] GPUIDLECYCLES: 21069821
+[    41] TOTAL_READ_BANDWIDTH  (MByte): 51.801356
+[    42] TOTAL_WRITE_BANDWIDTH (MByte): 39.915896
+[    43] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    44] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    45] DDR_READ_BANDWIDTH (MByte): 51.801356
+[    46] DDR_WRITE_BANDWIDTH (MByte): 39.915896
+[    47] GPUTOTALCYCLES: 76068266
+[    48] GPUIDLECYCLES: 18112275
+[    49] TOTAL_READ_BANDWIDTH  (MByte): 54.681683
+[    50] TOTAL_WRITE_BANDWIDTH (MByte): 39.918765
+[    51] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    52] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    53] DDR_READ_BANDWIDTH (MByte): 54.681683
+[    54] DDR_WRITE_BANDWIDTH (MByte): 39.918765
+[    55] GPUTOTALCYCLES: 2208935140
+[    56] GPUIDLECYCLES: 2151244249
+[    57] TOTAL_READ_BANDWIDTH  (MByte): 52.004647
+[    58] TOTAL_WRITE_BANDWIDTH (MByte): 39.920962
+[    59] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    60] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    61] DDR_READ_BANDWIDTH (MByte): 52.004647
+[    62] DDR_WRITE_BANDWIDTH (MByte): 39.920962
+[    63] GPUTOTALCYCLES: 487203258
+[    64] GPUIDLECYCLES: 429480340
+[    65] TOTAL_READ_BANDWIDTH  (MByte): 51.674617
+[    66] TOTAL_WRITE_BANDWIDTH (MByte): 39.918948
+[    67] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    68] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    69] DDR_READ_BANDWIDTH (MByte): 51.674617
+[    70] DDR_WRITE_BANDWIDTH (MByte): 39.918948
+[    71] GPUTOTALCYCLES: 114160038
+[    72] GPUIDLECYCLES: 56679804
+[    73] TOTAL_READ_BANDWIDTH  (MByte): 51.592815
+[    74] TOTAL_WRITE_BANDWIDTH (MByte): 39.924014
+[    75] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    76] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    77] DDR_READ_BANDWIDTH (MByte): 51.592815
+[    78] DDR_WRITE_BANDWIDTH (MByte): 39.924014
+[    79] GPUTOTALCYCLES: 98960085
+[    80] GPUIDLECYCLES: 41110899
+[    81] TOTAL_READ_BANDWIDTH  (MByte): 51.657496
+[    82] TOTAL_WRITE_BANDWIDTH (MByte): 39.916934
+[    83] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    84] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    85] DDR_READ_BANDWIDTH (MByte): 51.657496
+[    86] DDR_WRITE_BANDWIDTH (MByte): 39.916934
+[    87] GPUTOTALCYCLES: 125893278
+[    88] GPUIDLECYCLES: 68102717
+[    89] TOTAL_READ_BANDWIDTH  (MByte): 51.477596
+[    90] TOTAL_WRITE_BANDWIDTH (MByte): 39.915347
+[    91] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[    92] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[    93] DDR_READ_BANDWIDTH (MByte): 51.477596
+[    94] DDR_WRITE_BANDWIDTH (MByte): 39.915347
+[    95] GPUTOTALCYCLES: 107900905
+[    96] GPUIDLECYCLES: 50026192
+[    97] TOTAL_READ_BANDWIDTH  (MByte): 51.570842
+[    98] TOTAL_WRITE_BANDWIDTH (MByte): 39.923647
+[    99] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   100] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   101] DDR_READ_BANDWIDTH (MByte): 51.570842
+[   102] DDR_WRITE_BANDWIDTH (MByte): 39.923647
+[   103] GPUTOTALCYCLES: 113638737
+[   104] GPUIDLECYCLES: 55679165
+[   105] TOTAL_READ_BANDWIDTH  (MByte): 52.130334
+[   106] TOTAL_WRITE_BANDWIDTH (MByte): 39.922122
+[   107] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   108] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   109] DDR_READ_BANDWIDTH (MByte): 52.130334
+[   110] DDR_WRITE_BANDWIDTH (MByte): 39.922122
+[   111] GPUTOTALCYCLES: 112835514
+[   112] GPUIDLECYCLES: 54865005
+[   113] TOTAL_READ_BANDWIDTH  (MByte): 51.517971
+[   114] TOTAL_WRITE_BANDWIDTH (MByte): 39.918459
+[   115] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   116] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   117] DDR_READ_BANDWIDTH (MByte): 51.517971
+[   118] DDR_WRITE_BANDWIDTH (MByte): 39.918459
+[   119] GPUTOTALCYCLES: 106737916
+[   120] GPUIDLECYCLES: 48325303
+[   121] TOTAL_READ_BANDWIDTH  (MByte): 51.699305
+[   122] TOTAL_WRITE_BANDWIDTH (MByte): 39.919497
+[   123] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   124] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   125] DDR_READ_BANDWIDTH (MByte): 51.699305
+[   126] DDR_WRITE_BANDWIDTH (MByte): 39.919497
+[   127] GPUTOTALCYCLES: 101477107
+[   128] GPUIDLECYCLES: 44013867
+[   129] TOTAL_READ_BANDWIDTH  (MByte): 51.657176
+[   130] TOTAL_WRITE_BANDWIDTH (MByte): 39.914736
+[   131] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   132] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   133] DDR_READ_BANDWIDTH (MByte): 51.657176
+[   134] DDR_WRITE_BANDWIDTH (MByte): 39.914736
+[   135] GPUTOTALCYCLES: 98548418
+[   136] GPUIDLECYCLES: 41104905
+[   137] TOTAL_READ_BANDWIDTH  (MByte): 51.576854
+[   138] TOTAL_WRITE_BANDWIDTH (MByte): 39.920168
+[   139] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   140] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   141] DDR_READ_BANDWIDTH (MByte): 51.576854
+[   142] DDR_WRITE_BANDWIDTH (MByte): 39.920168
+[   143] GPUTOTALCYCLES: 101687577
+[   144] GPUIDLECYCLES: 43733031
+[   145] TOTAL_READ_BANDWIDTH  (MByte): 51.635844
+[   146] TOTAL_WRITE_BANDWIDTH (MByte): 39.914126
+[   147] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   148] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   149] DDR_READ_BANDWIDTH (MByte): 51.635844
+[   150] DDR_WRITE_BANDWIDTH (MByte): 39.914126
+[   151] GPUTOTALCYCLES: 111024728
+[   152] GPUIDLECYCLES: 52834453
+[   153] TOTAL_READ_BANDWIDTH  (MByte): 51.537197
+[   154] TOTAL_WRITE_BANDWIDTH (MByte): 39.918093
+[   155] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   156] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   157] DDR_READ_BANDWIDTH (MByte): 51.537197
+[   158] DDR_WRITE_BANDWIDTH (MByte): 39.918093
+[   159] GPUTOTALCYCLES: 101701187
+[   160] GPUIDLECYCLES: 44095598
+[   161] TOTAL_READ_BANDWIDTH  (MByte): 51.534999
+[   162] TOTAL_WRITE_BANDWIDTH (MByte): 39.921938
+[   163] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   164] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   165] DDR_READ_BANDWIDTH (MByte): 51.534999
+[   166] DDR_WRITE_BANDWIDTH (MByte): 39.921938
+[   167] GPUTOTALCYCLES: 103644850
+[   168] GPUIDLECYCLES: 45989318
+[   169] TOTAL_READ_BANDWIDTH  (MByte): 51.828104
+[   170] TOTAL_WRITE_BANDWIDTH (MByte): 39.910342
+[   171] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   172] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   173] DDR_READ_BANDWIDTH (MByte): 51.828104
+[   174] DDR_WRITE_BANDWIDTH (MByte): 39.910342
+[   175] GPUTOTALCYCLES: 99349067
+[   176] GPUIDLECYCLES: 41871052
+[   177] TOTAL_READ_BANDWIDTH  (MByte): 51.475902
+[   178] TOTAL_WRITE_BANDWIDTH (MByte): 39.914919
+[   179] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   180] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   181] DDR_READ_BANDWIDTH (MByte): 51.475902
+[   182] DDR_WRITE_BANDWIDTH (MByte): 39.914919
+[   183] GPUTOTALCYCLES: 95483840
+[   184] GPUIDLECYCLES: 37982594
+[   185] TOTAL_READ_BANDWIDTH  (MByte): 51.695902
+[   186] TOTAL_WRITE_BANDWIDTH (MByte): 39.919863
+[   187] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   188] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   189] DDR_READ_BANDWIDTH (MByte): 51.695902
+[   190] DDR_WRITE_BANDWIDTH (MByte): 39.919863
+[   191] GPUTOTALCYCLES: 99902137
+[   192] GPUIDLECYCLES: 42363557
+[   193] TOTAL_READ_BANDWIDTH  (MByte): 51.655253
+[   194] TOTAL_WRITE_BANDWIDTH (MByte): 39.922915
+[   195] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   196] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   197] DDR_READ_BANDWIDTH (MByte): 51.655253
+[   198] DDR_WRITE_BANDWIDTH (MByte): 39.922915
+[   199] GPUTOTALCYCLES: 109368616
+[   200] GPUIDLECYCLES: 52003806
+[   201] TOTAL_READ_BANDWIDTH  (MByte): 51.580974
+[   202] TOTAL_WRITE_BANDWIDTH (MByte): 39.914919
+[   203] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   204] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   205] DDR_READ_BANDWIDTH (MByte): 51.580974
+[   206] DDR_WRITE_BANDWIDTH (MByte): 39.914919
+[   207] GPUTOTALCYCLES: 98607019
+[   208] GPUIDLECYCLES: 41099385
+[   209] TOTAL_READ_BANDWIDTH  (MByte): 51.596904
+[   210] TOTAL_WRITE_BANDWIDTH (MByte): 39.920718
+[   211] AXI_SRAM_READ_BANDWIDTH  (MByte): 0.000000
+[   212] AXI_SRAM_WRITE_BANDWIDTH (MByte): 0.000000
+[   213] DDR_READ_BANDWIDTH (MByte): 51.596904
+[   214] DDR_WRITE_BANDWIDTH (MByte): 39.920718
+[   215] GPUTOTALCYCLES: 102507059
+[   216] GPUIDLECYCLES: 44688241
