@@ -310,7 +310,7 @@ class WhisperBenchmark:
         print(f"\n⚡ THROUGHPUT:")
         print(f"   Inferences/Second:       {s['throughput']['inferences_per_second']:.2f}")
         print(f"   Real-time Factor:        {s['throughput']['audio_realtime_factor']:.2f}x")
-        print(f"   Audio Processing Speed:  {'Real-time' if s['throughput']['audio_realtime_factor'] >= 1.0 else 'Slower than real-time'}")
+        
         
         print(f"\n🔧 SYSTEM INFO:")
         si = self.results['system_info']
@@ -320,17 +320,7 @@ class WhisperBenchmark:
         print(f"\n📝 SAMPLE OUTPUT:")
         print(f"   \"{s['sample_transcription'][:100]}{'...' if len(s['sample_transcription']) > 100 else ''}\"")
         
-        # Production recommendations
-        print(f"\n🚀 PRODUCTION RECOMMENDATIONS:")
-        rt_factor = s['throughput']['audio_realtime_factor']
-        if rt_factor >= 4.0:
-            print("   ✅ EXCELLENT: Can handle 4x concurrent streams")
-        elif rt_factor >= 2.0:
-            print("   ✅ GOOD: Can handle 2x concurrent streams")  
-        elif rt_factor >= 1.0:
-            print("   ⚠️  ACCEPTABLE: Real-time processing capable")
-        else:
-            print("   ❌ POOR: Slower than real-time, not suitable for live processing")
+        
     
     def save_results(self, output_file=None):
         """Save detailed results to JSON file"""
