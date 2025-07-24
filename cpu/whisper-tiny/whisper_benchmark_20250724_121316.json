@@ -1,0 +1,348 @@
+{
+  "system_info": {
+    "python_version": "3.12.7 (main, Oct  1 2024, 02:05:46) [GCC 13.3.0]",
+    "platform": "Linux 6.1.55-hardened1",
+    "architecture": "aarch64",
+    "timestamp": "2025-07-24T12:09:11.684676"
+  },
+  "model_info": {
+    "model_path": "/home/scmd/whisper-tiny-en.tflite",
+    "input_shape": [
+      1,
+      80,
+      3000
+    ],
+    "output_shape": [
+      1,
+      448
+    ],
+    "input_dtype": "<class 'numpy.float32'>",
+    "output_dtype": "<class 'numpy.int32'>"
+  },
+  "benchmark_results": [
+    {
+      "iteration": 1,
+      "timings": {
+        "tensor_setup": 0.00054976499995973427,
+        "inference": 10.529837575999409,
+        "output_retrieval": 4.600100055540679e-05,
+        "postprocessing": 0.006165300000247953,
+        "total": 10.536598642000172
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 2,
+      "timings": {
+        "tensor_setup": 0.00044251300005271332,
+        "inference": 10.701039784999921,
+        "output_retrieval": 4.8250999498122837e-05,
+        "postprocessing": 0.0062643029996252153,
+        "total": 10.707794851999097
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 3,
+      "timings": {
+        "tensor_setup": 0.00051138999970135046,
+        "inference": 10.721603100999346,
+        "output_retrieval": 3.7126000279386062e-05,
+        "postprocessing": 0.0061094229995433125,
+        "total": 10.72826103999887
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 4,
+      "timings": {
+        "tensor_setup": 0.00046176300020306371,
+        "inference": 10.684039272000518,
+        "output_retrieval": 4.3001000449294224e-05,
+        "postprocessing": 0.0061587990003317827,
+        "total": 10.690702835001503
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 5,
+      "timings": {
+        "tensor_setup": 0.00046926400045776973,
+        "inference": 10.594298470000467,
+        "output_retrieval": 4.5126999793865252e-05,
+        "postprocessing": 0.0062455509996652836,
+        "total": 10.601058412000384
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 6,
+      "timings": {
+        "tensor_setup": 0.00051213900042057503,
+        "inference": 10.510366962999797,
+        "output_retrieval": 4.175100002612453e-05,
+        "postprocessing": 0.0060137950003991136,
+        "total": 10.516934648000642
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 7,
+      "timings": {
+        "tensor_setup": 0.00041663599949970376,
+        "inference": 10.606047284999477,
+        "output_retrieval": 4.4750999222742394e-05,
+        "postprocessing": 0.006171924000227591,
+        "total": 10.612680595998427
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 8,
+      "timings": {
+        "tensor_setup": 0.00049576400033402024,
+        "inference": 10.595412602000579,
+        "output_retrieval": 4.7251000069081783e-05,
+        "postprocessing": 0.0061376730000120006,
+        "total": 10.602093290000994
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 9,
+      "timings": {
+        "tensor_setup": 0.00052263999987189891,
+        "inference": 10.494423369999822,
+        "output_retrieval": 4.4751999666914344e-05,
+        "postprocessing": 0.0060939219993088045,
+        "total": 10.50108468399867
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 10,
+      "timings": {
+        "tensor_setup": 0.00051951499972346937,
+        "inference": 10.668862666999303,
+        "output_retrieval": 4.6500999815179966e-05,
+        "postprocessing": 0.0061010469999018824,
+        "total": 10.675529729998743
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 11,
+      "timings": {
+        "tensor_setup": 0.00063539299935655436,
+        "inference": 10.718002798999805,
+        "output_retrieval": 4.6750999899813905e-05,
+        "postprocessing": 0.0062613019999844255,
+        "total": 10.724946244999046
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 12,
+      "timings": {
+        "tensor_setup": 0.00054214099964156048,
+        "inference": 10.662080465999679,
+        "output_retrieval": 4.5125999349693302e-05,
+        "postprocessing": 0.0061427979999280069,
+        "total": 10.668810530998599
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 13,
+      "timings": {
+        "tensor_setup": 0.00047401400024682516,
+        "inference": 10.563337306999529,
+        "output_retrieval": 4.4000999878335278e-05,
+        "postprocessing": 0.0060820460003014887,
+        "total": 10.569937367999955
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 14,
+      "timings": {
+        "tensor_setup": 0.00055726499977026833,
+        "inference": 10.570152001000679,
+        "output_retrieval": 4.7501000153715722e-05,
+        "postprocessing": 0.0062221759999374626,
+        "total": 10.57697894300054
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 15,
+      "timings": {
+        "tensor_setup": 0.00050876400018751156,
+        "inference": 10.600793991000501,
+        "output_retrieval": 4.412600083014695e-05,
+        "postprocessing": 0.0061386730003505363,
+        "total": 10.607485554001869
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 16,
+      "timings": {
+        "tensor_setup": 0.00060414200015657116,
+        "inference": 10.562210658000367,
+        "output_retrieval": 4.3876999370695557e-05,
+        "postprocessing": 0.0061601729994436027,
+        "total": 10.569018849999338
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 17,
+      "timings": {
+        "tensor_setup": 0.00051701499978662468,
+        "inference": 10.549062043000049,
+        "output_retrieval": 4.762699973070994e-05,
+        "postprocessing": 0.0062012989992581424,
+        "total": 10.555827983998824
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 18,
+      "timings": {
+        "tensor_setup": 0.00048576300014246954,
+        "inference": 10.644756616999985,
+        "output_retrieval": 4.4501999582280405e-05,
+        "postprocessing": 0.0062074239995126845,
+        "total": 10.651494305999222
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 19,
+      "timings": {
+        "tensor_setup": 0.00050888900022982853,
+        "inference": 10.754931221999868,
+        "output_retrieval": 4.162599998380756e-05,
+        "postprocessing": 0.0062513009997928748,
+        "total": 10.761733037999875
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    },
+    {
+      "iteration": 20,
+      "timings": {
+        "tensor_setup": 0.00056539100023655919,
+        "inference": 10.720851267999933,
+        "output_retrieval": 4.3875999836018309e-05,
+        "postprocessing": 0.0060815450005975435,
+        "total": 10.727542080000603
+      },
+      "transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.",
+      "output_shape": [
+        1,
+        448
+      ]
+    }
+  ],
+  "summary": {
+    "preprocessing_time": 0.39055246299994906,
+    "iterations": 20,
+    "warmup_runs": 3,
+    "total_time": {
+      "mean": 10.629325681399768,
+      "median": 10.610083075000148,
+      "std": 0.077966260938129042,
+      "min": 10.50108468399867,
+      "max": 10.761733037999875
+    },
+    "inference_time": {
+      "mean": 10.622605473149951,
+      "median": 10.603420637999989,
+      "std": 0.077941669082942228,
+      "min": 10.494423369999822,
+      "max": 10.754931221999868
+    },
+    "throughput": {
+      "inferences_per_second": 0.094079345197776526,
+      "audio_realtime_factor": 2.8223803559332956
+    },
+    "sample_transcription": " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream."
+  }
+}
