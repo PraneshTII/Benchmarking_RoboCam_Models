@@ -1,6 +1,6 @@
 
 
-To run it in i.MX 8M Plus:
+##To run it in i.MX 8M Plus:
 
 [scmd@nixos:~]$ python whisper_cpu_test_imx.py 
               INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
