@@ -1,1 +1,92 @@
 
+
+To run it in i.MX 8M Plus:
+
+[scmd@nixos:~]$ python whisper_cpu_test_imx.py 
+              INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+              Model loaded. Input shape: [   1   80 3000]
+              Loaded 50256 tokens and mel filters shape: (80, 201)
+              Loading WAV audio: /home/scmd/input.wav
+              Loaded audio: sample rate 16000Hz, length 208000 samples
+              Audio preprocessed: 480000 samples, 30.0 seconds
+              Computing mel spectrogram...
+              Mel spectrogram shape: (1, 80, 3000)
+              Running inference...
+              Output tokens shape: (1, 448)
+              
+              ==================================================
+              TRANSCRIPTION:
+              ==================================================
+               I have a dream, but one day, this nation will rise up, live up the true meaning of its dream.
+              ==================================================
+              
+              Transcription saved to: /home/scmd/input_transcription.txt 
+
+[scmd@nixos:~]$ python whisper_cpu_imx_becnhmark.py 
+              Loading TFLite model...
+              INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+              Loading preprocessing components...
+              Loaded 50256 tokens, mel filters: (80, 201)
+              
+              ============================================================
+              WHISPER TFLITE PROFESSIONAL BENCHMARK
+              ============================================================
+              Preprocessing audio...
+              Preprocessing completed: 0.3906s
+              
+              Running 3 warmup iterations...
+              Warmup 1/3 completed
+              Warmup 2/3 completed
+              Warmup 3/3 completed
+              
+              Running 20 benchmark iterations...
+              Iteration 1/20: 10.5366s
+              Iteration 2/20: 10.7078s
+              Iteration 3/20: 10.7283s
+              Iteration 4/20: 10.6907s
+              Iteration 5/20: 10.6011s
+              Iteration 6/20: 10.5169s
+              Iteration 7/20: 10.6127s
+              Iteration 8/20: 10.6021s
+              Iteration 9/20: 10.5011s
+              Iteration 10/20: 10.6755s
+              Iteration 11/20: 10.7249s
+              Iteration 12/20: 10.6688s
+              Iteration 13/20: 10.5699s
+              Iteration 14/20: 10.5770s
+              Iteration 15/20: 10.6075s
+              Iteration 16/20: 10.5690s
+              Iteration 17/20: 10.5558s
+              Iteration 18/20: 10.6515s
+              Iteration 19/20: 10.7617s
+              Iteration 20/20: 10.7275s
+              
+              ============================================================
+              BENCHMARK RESULTS
+              ============================================================
+              
+              📊 PERFORMANCE METRICS:
+                 Mean Inference Time:     10622.61 ms
+                 Mean Total Time:         10629.33 ms
+                 Std Deviation:           77.97 ms
+                 Min/Max Time:            10501.08 / 10761.73 ms
+              
+              ⚡ THROUGHPUT:
+                 Inferences/Second:       0.09
+                 Real-time Factor:        2.82x
+                 Audio Processing Speed:  Real-time
+              
+              🔧 SYSTEM INFO:
+                 Platform:                Linux 6.1.55-hardened1
+                 Architecture:            aarch64
+              
+              📝 SAMPLE OUTPUT:
+                 " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream."
+              
+              🚀 PRODUCTION RECOMMENDATIONS:
+                 ✅ GOOD: Can handle 2x concurrent streams
+              
+              📁 Detailed results saved to: whisper_benchmark_20250724_121316.json
+
+
+
