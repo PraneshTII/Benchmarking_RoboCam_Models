@@ -74,7 +74,6 @@
               ⚡ THROUGHPUT:
                  Inferences/Second:       0.09
                  Real-time Factor:        2.82x
-                 Audio Processing Speed:  Real-time
               
               🔧 SYSTEM INFO:
                  Platform:                Linux 6.1.55-hardened1
@@ -82,9 +81,6 @@
               
               📝 SAMPLE OUTPUT:
                  " I have a dream, but one day, this nation will rise up, live up the true meaning of its dream."
-              
-              🚀 PRODUCTION RECOMMENDATIONS:
-                 ✅ GOOD: Can handle 2x concurrent streams
               
               📁 Detailed results saved to: whisper_benchmark_20250724_121316.json
 
