@@ -1,0 +1,261 @@
+{
+  "model_path": "wav2letter_pruned_int8.tflite",
+  "model_name": "wav2letter_pruned_int8.tflite",
+  "file_size_mb": 22.665206909179688,
+  "timestamp": "2025-07-29T16:41:42.709102",
+  "window_size": 296,
+  "context_size": 98,
+  "inner_size": 100,
+  "windows_analysis": {
+    "1s": {
+      "duration": 1,
+      "windows_needed": 1,
+      "windows_per_second": 1.0
+    },
+    "5s": {
+      "duration": 5,
+      "windows_needed": 5,
+      "windows_per_second": 1.0
+    },
+    "10s": {
+      "duration": 10,
+      "windows_needed": 10,
+      "windows_per_second": 1.0
+    },
+    "30s": {
+      "duration": 30,
+      "windows_needed": 30,
+      "windows_per_second": 1.0
+    },
+    "60s": {
+      "duration": 60,
+      "windows_needed": 60,
+      "windows_per_second": 1.0
+    }
+  },
+  "cpu": {
+    "sliding_window": {
+      "1s": {
+        "audio_duration_seconds": 1,
+        "windows_needed": 1,
+        "total_transcription_times_ms": [
+          795.42332799974247,
+          797.37500500050373,
+          789.56754799946793,
+          784.53553999861469,
+          797.30025300159468
+        ],
+        "mean_transcription_time_ms": 792.8403347999847,
+        "std_transcription_time_ms": 5.6304242335063277,
+        "mean_single_inference_ms": 792.72270680012298,
+        "realtime_factor": 0.79284033479998473,
+        "throughput_hours_per_hour": 4.5406367990954912
+      },
+      "5s": {
+        "audio_duration_seconds": 5,
+        "windows_needed": 5,
+        "total_transcription_times_ms": [
+          3901.8207720000646,
+          3909.907238001324,
+          3892.1561440001824,
+          3894.8925920012698,
+          3779.8070440003357
+        ],
+        "mean_transcription_time_ms": 3875.7167580006353,
+        "std_transcription_time_ms": 54.053324899679275,
+        "mean_single_inference_ms": 775.05530927999644,
+        "realtime_factor": 0.77514335160012704,
+        "throughput_hours_per_hour": 4.6443022346363758
+      },
+      "10s": {
+        "audio_duration_seconds": 10,
+        "windows_needed": 10,
+        "total_transcription_times_ms": [
+          7526.6745930020988,
+          7650.7080100018356,
+          7573.3847150004294,
+          7644.6234830000321,
+          7485.9767829984776
+        ],
+        "mean_transcription_time_ms": 7576.2735168005747,
+        "std_transcription_time_ms": 72.17012922728118,
+        "mean_single_inference_ms": 757.54084185995453,
+        "realtime_factor": 0.75762735168005746,
+        "throughput_hours_per_hour": 4.7516763907967556
+      },
+      "30s": {
+        "audio_duration_seconds": 30,
+        "windows_needed": 30,
+        "total_transcription_times_ms": [
+          23084.158726000169,
+          23287.549786000454,
+          22781.861424002273,
+          22731.936642001529,
+          23169.500910000352
+        ],
+        "mean_transcription_time_ms": 23011.001497600955,
+        "std_transcription_time_ms": 243.5853888137791,
+        "mean_single_inference_ms": 766.9483451069633,
+        "realtime_factor": 0.76703338325336512,
+        "throughput_hours_per_hour": 4.6934071953043714
+      },
+      "60s": {
+        "audio_duration_seconds": 60,
+        "windows_needed": 60,
+        "total_transcription_times_ms": [
+          45946.00602599894,
+          46206.878360000701,
+          45827.684093001153,
+          46437.924442998337,
+          45482.549759999529
+        ],
+        "mean_transcription_time_ms": 45980.208536399732,
+        "std_transcription_time_ms": 365.0276822942979,
+        "mean_single_inference_ms": 766.25022206349968,
+        "realtime_factor": 0.76633680893999556,
+        "throughput_hours_per_hour": 4.6976733441521032
+      }
+    },
+    "batched": {
+      "batch_1": {
+        "batch_size": 1,
+        "mean_batch_time_ms": 760.28067140032363,
+        "per_sample_time_ms": 760.28067140032363,
+        "samples_per_second": 1.3153037261333358,
+        "efficiency_vs_single": 1.0
+      }
+    }
+  },
+  "npu": {
+    "sliding_window": {
+      "1s": {
+        "audio_duration_seconds": 1,
+        "windows_needed": 1,
+        "total_transcription_times_ms": [
+          518.71751399812638,
+          519.72604099864839,
+          519.48428399919067,
+          519.76004199968884,
+          518.80901600088691
+        ],
+        "mean_transcription_time_ms": 519.29937939930824,
+        "std_transcription_time_ms": 0.50186239907030972,
+        "mean_single_inference_ms": 519.19360099855112,
+        "realtime_factor": 0.51929937939930826,
+        "throughput_hours_per_hour": 6.9324172968668787
+      },
+      "5s": {
+        "audio_duration_seconds": 5,
+        "windows_needed": 5,
+        "total_transcription_times_ms": [
+          2598.3201939998253,
+          2592.334534998372,
+          2595.5392469986691,
+          2596.1755139978777,
+          2602.3446780018276
+        ],
+        "mean_transcription_time_ms": 2596.9428335993143,
+        "std_transcription_time_ms": 3.7037918183115464,
+        "mean_single_inference_ms": 519.30011432021274,
+        "realtime_factor": 0.51938856671986289,
+        "throughput_hours_per_hour": 6.9312268899859975
+      },
+      "10s": {
+        "audio_duration_seconds": 10,
+        "windows_needed": 10,
+        "total_transcription_times_ms": [
+          5193.3550569992804,
+          5191.0626230019261,
+          5199.7982319990115,
+          5192.2019069970702,
+          5191.0700039989024
+        ],
+        "mean_transcription_time_ms": 5193.4975645992381,
+        "std_transcription_time_ms": 3.6475826848507067,
+        "mean_single_inference_ms": 519.26292904012371,
+        "realtime_factor": 0.51934975645992376,
+        "throughput_hours_per_hour": 6.9317448505972257
+      },
+      "30s": {
+        "audio_duration_seconds": 30,
+        "windows_needed": 30,
+        "total_transcription_times_ms": [
+          15589.27957600099,
+          15576.720886001567,
+          15578.914211000665,
+          15590.698040999996,
+          15583.462242000678
+        ],
+        "mean_transcription_time_ms": 15583.814991200779,
+        "std_transcription_time_ms": 6.1584589939912631,
+        "mean_single_inference_ms": 519.37733584660839,
+        "realtime_factor": 0.51946049970669261,
+        "throughput_hours_per_hour": 6.9302670790805045
+      },
+      "60s": {
+        "audio_duration_seconds": 60,
+        "windows_needed": 60,
+        "total_transcription_times_ms": [
+          31158.6391919991,
+          31162.981752000633,
+          31165.321758999198,
+          31150.63643800022,
+          31158.943976002774
+        ],
+        "mean_transcription_time_ms": 31159.304623400385,
+        "std_transcription_time_ms": 5.599944177938827,
+        "mean_single_inference_ms": 519.23831694338639,
+        "realtime_factor": 0.51932174372333972,
+        "throughput_hours_per_hour": 6.9321187558783244
+      }
+    },
+    "batched": {
+      "batch_1": {
+        "batch_size": 1,
+        "mean_batch_time_ms": 518.65943479970156,
+        "per_sample_time_ms": 518.65943479970156,
+        "samples_per_second": 1.9280474486812043,
+        "efficiency_vs_single": 1.0
+      }
+    }
+  },
+  "comparison": {
+    "1s": {
+      "cpu_time_ms": 792.8403347999847,
+      "npu_time_ms": 519.29937939930824,
+      "npu_speedup": 1.5267500140614281,
+      "cpu_realtime_factor": 0.79284033479998473,
+      "npu_realtime_factor": 0.51929937939930826
+    },
+    "5s": {
+      "cpu_time_ms": 3875.7167580006353,
+      "npu_time_ms": 2596.9428335993143,
+      "npu_speedup": 1.492415122834631,
+      "cpu_realtime_factor": 0.77514335160012704,
+      "npu_realtime_factor": 0.51938856671986289
+    },
+    "10s": {
+      "cpu_time_ms": 7576.2735168005747,
+      "npu_time_ms": 5193.4975645992381,
+      "npu_speedup": 1.4587998593555143,
+      "cpu_realtime_factor": 0.75762735168005746,
+      "npu_realtime_factor": 0.51934975645992376
+    },
+    "30s": {
+      "cpu_time_ms": 23011.001497600955,
+      "npu_time_ms": 15583.814991200779,
+      "npu_speedup": 1.47659616792126,
+      "cpu_realtime_factor": 0.76703338325336512,
+      "npu_realtime_factor": 0.51946049970669261
+    },
+    "60s": {
+      "cpu_time_ms": 45980.208536399732,
+      "npu_time_ms": 31159.304623400385,
+      "npu_speedup": 1.4756493796035797,
+      "cpu_realtime_factor": 0.76633680893999556,
+      "npu_realtime_factor": 0.51932174372333972
+    }
+  },
+  "overall_speedup": 1.4860421087552826,
+  "recommendation": "\u2713 Moderate recommendation for NPU deployment"
+}
