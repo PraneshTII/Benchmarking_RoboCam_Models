@@ -1,0 +1,250 @@
+[scmd@nixos:~/tts/wakeword]$ python realstic_benchmark_tts.py --model wav2letter_pruned_int8.tflite 
+
+================================================================================
+REALISTIC WAV2LETTER BENCHMARKING: wav2letter_pruned_int8.tflite
+Model path: wav2letter_pruned_int8.tflite
+File size: 22.7 MB
+================================================================================
+
+SLIDING WINDOW ANALYSIS:
+  1s: 1 windows (1.0 windows/sec)
+  5s: 5 windows (1.0 windows/sec)
+  10s: 10 windows (1.0 windows/sec)
+  30s: 30 windows (1.0 windows/sec)
+  60s: 60 windows (1.0 windows/sec)
+
+============================================================
+SETTING UP CPU INTERPRETER
+============================================================
+
+======================================================================
+REALISTIC SLIDING WINDOW BENCHMARK: CPU
+======================================================================
+Performing 5 warmup inferences...
+  Warmup 2/5
+  Warmup 4/5
+
+--- Testing 1s audio (1 inference calls) ---
+  Run 1: 795.4ms total, 795.4ms avg per window
+  Run 2: 797.4ms total, 797.4ms avg per window
+  Run 3: 789.6ms total, 789.6ms avg per window
+  Run 4: 784.5ms total, 784.5ms avg per window
+  Run 5: 797.3ms total, 797.3ms avg per window
+  Mean total time: 792.8ms
+  Mean per window: 792.7ms
+  Real-time factor: 0.79x
+  ✓ Faster than real-time!
+  Throughput: 4.5 hours of audio per hour
+
+--- Testing 5s audio (5 inference calls) ---
+  Run 1: 3901.8ms total, 780.4ms avg per window
+  Run 2: 3909.9ms total, 782.0ms avg per window
+  Run 3: 3892.2ms total, 778.4ms avg per window
+  Run 4: 3894.9ms total, 779.0ms avg per window
+  Run 5: 3779.8ms total, 756.0ms avg per window
+  Mean total time: 3875.7ms
+  Mean per window: 775.1ms
+  Real-time factor: 0.78x
+  ✓ Faster than real-time!
+  Throughput: 4.6 hours of audio per hour
+
+--- Testing 10s audio (10 inference calls) ---
+  Run 1: 7526.7ms total, 752.7ms avg per window
+  Run 2: 7650.7ms total, 765.1ms avg per window
+  Run 3: 7573.4ms total, 757.3ms avg per window
+  Run 4: 7644.6ms total, 764.5ms avg per window
+  Run 5: 7486.0ms total, 748.6ms avg per window
+  Mean total time: 7576.3ms
+  Mean per window: 757.5ms
+  Real-time factor: 0.76x
+  ✓ Faster than real-time!
+  Throughput: 4.8 hours of audio per hour
+
+--- Testing 30s audio (30 inference calls) ---
+  Run 1: 23084.2ms total, 769.5ms avg per window
+  Run 2: 23287.5ms total, 776.3ms avg per window
+  Run 3: 22781.9ms total, 759.4ms avg per window
+  Run 4: 22731.9ms total, 757.7ms avg per window
+  Run 5: 23169.5ms total, 772.3ms avg per window
+  Mean total time: 23011.0ms
+  Mean per window: 766.9ms
+  Real-time factor: 0.77x
+  ✓ Faster than real-time!
+  Throughput: 4.7 hours of audio per hour
+
+--- Testing 60s audio (60 inference calls) ---
+  Run 1: 45946.0ms total, 765.8ms avg per window
+  Run 2: 46206.9ms total, 770.1ms avg per window
+  Run 3: 45827.7ms total, 763.8ms avg per window
+  Run 4: 46437.9ms total, 774.0ms avg per window
+  Run 5: 45482.5ms total, 758.0ms avg per window
+  Mean total time: 45980.2ms
+  Mean per window: 766.3ms
+  Real-time factor: 0.77x
+  ✓ Faster than real-time!
+  Throughput: 4.7 hours of audio per hour
+
+============================================================
+BATCHED INFERENCE BENCHMARK: CPU
+============================================================
+Original input shape: [  1 296  39]
+Model supports dynamic/single batch size
+
+--- Testing batch size 1 ---
+  Batch time: 760.3ms
+  Per sample: 760.3ms
+  Throughput: 1.3 samples/sec
+  Efficiency vs single: 1.00x
+
+--- Testing batch size 2 ---
+  Skipping batch size 2 - model only supports batch size 1
+
+--- Testing batch size 4 ---
+  Skipping batch size 4 - model only supports batch size 1
+
+--- Testing batch size 8 ---
+  Skipping batch size 8 - model only supports batch size 1
+
+============================================================
+SETTING UP NPU INTERPRETER (VX DELEGATE)
+============================================================
+INFO: Vx delegate: allowed_cache_mode set to 0.
+INFO: Vx delegate: device num set to 0.
+INFO: Vx delegate: allowed_builtin_code set to 0.
+INFO: Vx delegate: error_during_init set to 0.
+INFO: Vx delegate: error_during_prepare set to 0.
+INFO: Vx delegate: error_during_invoke set to 0.
+
+======================================================================
+REALISTIC SLIDING WINDOW BENCHMARK: NPU
+======================================================================
+Performing 5 warmup inferences...
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+  Warmup 2/5
+  Warmup 4/5
+
+--- Testing 1s audio (1 inference calls) ---
+  Run 1: 518.7ms total, 518.7ms avg per window
+  Run 2: 519.7ms total, 519.7ms avg per window
+  Run 3: 519.5ms total, 519.5ms avg per window
+  Run 4: 519.8ms total, 519.8ms avg per window
+  Run 5: 518.8ms total, 518.8ms avg per window
+  Mean total time: 519.3ms
+  Mean per window: 519.2ms
+  Real-time factor: 0.52x
+  ✓ Faster than real-time!
+  Throughput: 6.9 hours of audio per hour
+
+--- Testing 5s audio (5 inference calls) ---
+  Run 1: 2598.3ms total, 519.7ms avg per window
+  Run 2: 2592.3ms total, 518.5ms avg per window
+  Run 3: 2595.5ms total, 519.1ms avg per window
+  Run 4: 2596.2ms total, 519.2ms avg per window
+  Run 5: 2602.3ms total, 520.5ms avg per window
+  Mean total time: 2596.9ms
+  Mean per window: 519.3ms
+  Real-time factor: 0.52x
+  ✓ Faster than real-time!
+  Throughput: 6.9 hours of audio per hour
+
+--- Testing 10s audio (10 inference calls) ---
+  Run 1: 5193.4ms total, 519.3ms avg per window
+  Run 2: 5191.1ms total, 519.1ms avg per window
+  Run 3: 5199.8ms total, 520.0ms avg per window
+  Run 4: 5192.2ms total, 519.2ms avg per window
+  Run 5: 5191.1ms total, 519.1ms avg per window
+  Mean total time: 5193.5ms
+  Mean per window: 519.3ms
+  Real-time factor: 0.52x
+  ✓ Faster than real-time!
+  Throughput: 6.9 hours of audio per hour
+
+--- Testing 30s audio (30 inference calls) ---
+  Run 1: 15589.3ms total, 519.6ms avg per window
+  Run 2: 15576.7ms total, 519.2ms avg per window
+  Run 3: 15578.9ms total, 519.3ms avg per window
+  Run 4: 15590.7ms total, 519.7ms avg per window
+  Run 5: 15583.5ms total, 519.4ms avg per window
+  Mean total time: 15583.8ms
+  Mean per window: 519.4ms
+  Real-time factor: 0.52x
+  ✓ Faster than real-time!
+  Throughput: 6.9 hours of audio per hour
+
+--- Testing 60s audio (60 inference calls) ---
+  Run 1: 31158.6ms total, 519.3ms avg per window
+  Run 2: 31163.0ms total, 519.4ms avg per window
+  Run 3: 31165.3ms total, 519.4ms avg per window
+  Run 4: 31150.6ms total, 519.2ms avg per window
+  Run 5: 31158.9ms total, 519.3ms avg per window
+  Mean total time: 31159.3ms
+  Mean per window: 519.2ms
+  Real-time factor: 0.52x
+  ✓ Faster than real-time!
+  Throughput: 6.9 hours of audio per hour
+
+============================================================
+BATCHED INFERENCE BENCHMARK: NPU
+============================================================
+Original input shape: [  1 296  39]
+Model supports dynamic/single batch size
+
+--- Testing batch size 1 ---
+  Batch time: 518.7ms
+  Per sample: 518.7ms
+  Throughput: 1.9 samples/sec
+  Efficiency vs single: 1.00x
+
+--- Testing batch size 2 ---
+  Skipping batch size 2 - model only supports batch size 1
+
+--- Testing batch size 4 ---
+  Skipping batch size 4 - model only supports batch size 1
+
+--- Testing batch size 8 ---
+  Skipping batch size 8 - model only supports batch size 1
+
+================================================================================
+REALISTIC PERFORMANCE COMPARISON
+================================================================================
+
+1s audio transcription:
+  CPU: 793ms (RTF: 0.79)
+  NPU: 519ms (RTF: 0.52)
+  NPU speedup: 1.53x
+  ✓ NPU achieves real-time performance
+  ✓ CPU achieves real-time performance
+
+5s audio transcription:
+  CPU: 3876ms (RTF: 0.78)
+  NPU: 2597ms (RTF: 0.52)
+  NPU speedup: 1.49x
+  ✓ NPU achieves real-time performance
+  ✓ CPU achieves real-time performance
+
+10s audio transcription:
+  CPU: 7576ms (RTF: 0.76)
+  NPU: 5193ms (RTF: 0.52)
+  NPU speedup: 1.46x
+  ✓ NPU achieves real-time performance
+  ✓ CPU achieves real-time performance
+
+30s audio transcription:
+  CPU: 23011ms (RTF: 0.77)
+  NPU: 15584ms (RTF: 0.52)
+  NPU speedup: 1.48x
+  ✓ NPU achieves real-time performance
+  ✓ CPU achieves real-time performance
+
+60s audio transcription:
+  CPU: 45980ms (RTF: 0.77)
+  NPU: 31159ms (RTF: 0.52)
+  NPU speedup: 1.48x
+  ✓ NPU achieves real-time performance
+  ✓ CPU achieves real-time performance
+
+OVERALL ANALYSIS:
+  Average NPU speedup: 1.49x
+  ✓ Moderate recommendation for NPU deployment
+
+Results saved to: realistic_benchmark_wav2letter_pruned_int8_20250729_165348.json
