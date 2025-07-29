@@ -1,0 +1,105 @@
+[scmd@nixos:~/tts/wakeword]$ python benchmark_tts2.py --model wav2letter_pruned_int8.tflite 
+
+================================================================================
+BENCHMARKING MODEL: wav2letter_pruned_int8.tflite
+Model path: wav2letter_pruned_int8.tflite
+File size: 22.7 MB
+Warmup runs: 5
+Benchmark runs: 100
+================================================================================
+
+Loading model for input inspection...
+Model has 1 inputs and 1 outputs
+  Input 0: input_4 - [  1 296  39] - <class 'numpy.int8'>
+  Output 0: Identity - [  1   1 148  29] - <class 'numpy.int8'>
+
+Prepared 1 input tensors
+
+==================================================
+SETTING UP CPU INTERPRETER
+==================================================
+
+==================================================
+BENCHMARKING: CPU EXECUTION
+==================================================
+Performing 5 warmup runs...
+  Warmup 1/5
+  Warmup 2/5
+  Warmup 3/5
+  Warmup 4/5
+  Warmup 5/5
+
+Performing 100 benchmark runs...
+  Run 10/100 - 770.06ms
+  Run 20/100 - 768.19ms
+  Run 30/100 - 772.34ms
+  Run 40/100 - 744.10ms
+  Run 50/100 - 763.98ms
+  Run 60/100 - 753.89ms
+  Run 70/100 - 748.99ms
+  Run 80/100 - 755.22ms
+  Run 90/100 - 782.84ms
+  Run 100/100 - 752.72ms
+
+CPU EXECUTION RESULTS:
+  Successful runs: 100/100
+  Mean time:       769.11 ms
+  Median time:     765.90 ms
+  Min time:        740.24 ms
+  Max time:        845.27 ms
+  Std deviation:   20.94 ms
+  Throughput:      1.30 inferences/sec
+
+==================================================
+SETTING UP NPU INTERPRETER (VX DELEGATE)
+==================================================
+INFO: Vx delegate: allowed_cache_mode set to 0.
+INFO: Vx delegate: device num set to 0.
+INFO: Vx delegate: allowed_builtin_code set to 1.
+INFO: Vx delegate: error_during_init set to 0.
+INFO: Vx delegate: error_during_prepare set to 0.
+INFO: Vx delegate: error_during_invoke set to 0.
+
+==================================================
+BENCHMARKING: NPU EXECUTION (VX DELEGATE)
+==================================================
+Performing 5 warmup runs...
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+  Warmup 1/5
+  Warmup 2/5
+  Warmup 3/5
+  Warmup 4/5
+  Warmup 5/5
+
+Performing 100 benchmark runs...
+  Run 10/100 - 518.75ms
+  Run 20/100 - 519.25ms
+  Run 30/100 - 518.84ms
+  Run 40/100 - 522.39ms
+  Run 50/100 - 518.83ms
+  Run 60/100 - 519.26ms
+  Run 70/100 - 519.87ms
+  Run 80/100 - 518.66ms
+  Run 90/100 - 522.92ms
+  Run 100/100 - 520.13ms
+
+NPU EXECUTION (VX DELEGATE) RESULTS:
+  Successful runs: 100/100
+  Mean time:       519.28 ms
+  Median time:     519.01 ms
+  Min time:        518.32 ms
+  Max time:        522.92 ms
+  Std deviation:   0.80 ms
+  Throughput:      1.93 inferences/sec
+
+==================================================
+PERFORMANCE COMPARISON
+==================================================
+CPU mean time:    769.11 ms
+NPU mean time:    519.28 ms
+NPU Speedup:      1.48x
+CPU Throughput:   1.30 inferences/sec
+NPU Throughput:   1.93 inferences/sec
+
+Results saved to: benchmark_wav2letter_pruned_int8_20250729_163843.json
+
