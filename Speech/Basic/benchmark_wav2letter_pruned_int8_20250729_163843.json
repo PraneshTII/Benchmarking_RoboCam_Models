@@ -1,0 +1,65 @@
+{
+  "model_path": "wav2letter_pruned_int8.tflite",
+  "model_name": "wav2letter_pruned_int8.tflite",
+  "file_size_mb": 22.665206909179688,
+  "timestamp": "2025-07-29T16:36:07.222264",
+  "warmup_runs": 5,
+  "benchmark_runs": 100,
+  "input_details": [
+    {
+      "name": "input_4",
+      "index": 0,
+      "shape": "[  1 296  39]",
+      "shape_signature": "[  1 296  39]",
+      "dtype": "<class 'numpy.int8'>",
+      "quantization": [
+        0.14385513961315155,
+        -3
+      ],
+      "quantization_parameters": {
+        "scales": "[0.14385514]",
+        "zero_points": "[-3]",
+        "quantized_dimension": 0
+      },
+      "sparsity_parameters": {}
+    }
+  ],
+  "output_details": [
+    {
+      "name": "Identity",
+      "index": 45,
+      "shape": "[  1   1 148  29]",
+      "shape_signature": "[  1   1 148  29]",
+      "dtype": "<class 'numpy.int8'>",
+      "quantization": [
+        0.37188172340393066,
+        -87
+      ],
+      "quantization_parameters": {
+        "scales": "[0.37188172]",
+        "zero_points": "[-87]",
+        "quantized_dimension": 0
+      },
+      "sparsity_parameters": {}
+    }
+  ],
+  "cpu": {
+    "min_time": 740.24184900190448,
+    "max_time": 845.27187599815079,
+    "mean_time": 769.1094449198863,
+    "median_time": 765.89602799867862,
+    "std_dev": 20.943292391591093,
+    "total_runs": 100,
+    "successful_runs": 100
+  },
+  "npu": {
+    "min_time": 518.3190999996441,
+    "max_time": 522.91872300338582,
+    "mean_time": 519.27893628006132,
+    "median_time": 519.01180599816144,
+    "std_dev": 0.80099300902228154,
+    "total_runs": 100,
+    "successful_runs": 100
+  },
+  "speedup": 1.4811104229058976
+}
