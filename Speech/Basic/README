@@ -1,1 +1,378 @@
 
+[scmd@nixos:~/tts/wakeword]$ python wav2letter_test_fixed.py 
+DEBUG: Transcript converted to integers: [22, 14, 22, 27, 22, 7, 0, 19, 27, 0, 13, 27, 0, 20, 3, 8, 4, 13, 2, 4, 27, 1, 20, 19, 27, 8, 5, 27, 8, 27, 0, 12, 27, 1, 4, 8, 13, 6, 27, 7, 14, 13, 4, 18, 19, 27, 8, 27, 3, 14]...
+DEBUG: Starting main execution
+DEBUG: Starting TFLite evaluation with window length 296
+DEBUG: Starting MFCC transformation
+DEBUG: Loading audio file with scipy: audio_1m.wav
+DEBUG: Original audio - sample_rate: 44100, shape: (2500463, 2), dtype: int16
+DEBUG: Converting int16 to float32
+DEBUG: Converting stereo (2 channels) to mono
+DEBUG: Audio after conversion - shape: (2500463,), dtype: float32
+DEBUG: Audio range: [-0.657410, 0.618164]
+DEBUG: Resampling from 44100 Hz to 16000 Hz
+DEBUG: Resampled audio shape: (907197,)
+DEBUG: Final audio - length: 907197, sample_rate: 16000
+DEBUG: Final first 10 samples: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+DEBUG: Computing base MFCC features
+DEBUG: Computing MFCC - n_mfcc: 13, dct_type: 2, norm: ortho
+DEBUG: Computing mel spectrogram - n_fft: 512, hop_length: 160, power: 2.0
+DEBUG: STFT - n_fft: 512, hop_length: 160, center: True
+DEBUG: After center padding: (907709,)
+DEBUG: Number of frames: 5670
+DEBUG: Window shape: (512,)
+DEBUG: STFT matrix shape: (257, 5670)
+DEBUG: Power spectrogram shape: (257, 5670)
+DEBUG: Creating mel filterbank - sr: 16000, n_fft: 512, n_mels: 128, norm: slaney
+DEBUG: Frequency range: 0.0 Hz to 8000.0 Hz
+DEBUG: FFT frequencies shape: (257,)
+DEBUG: Mel range: 0.00 to 2840.02
+DEBUG: Mel filter center frequencies: [ 0.         13.80884544 27.8900969  42.24912811 56.89141881]...
+DEBUG: Filterbank shape: (128, 257)
+DEBUG: Filterbank max values per filter (first 5): [0.         0.0538678  0.01613667 0.04222508 0.02491177]
+DEBUG: Mel spectrogram shape: (128, 5670)
+DEBUG: Converting power to dB - ref: 1.0, amin: 1e-10, top_db: 80.0
+DEBUG: DB conversion - input range: [0.000000e+00, 6.146860e+01]
+DEBUG: DB conversion - output range: [-62.113467, 17.886533]
+DEBUG: DB mel spectrogram shape: (128, 5670)
+DEBUG: DB mel spectrogram range: [-62.113467, 17.886533]
+DEBUG: Final MFCC shape: (13, 5670)
+DEBUG: MFCC range: [-702.733657, 188.670263]
+DEBUG: Computing delta features
+DEBUG: Computing delta features - order: 1, width: 9, mode: interp
+DEBUG: Input data shape: (13, 5670)
+DEBUG: Using savgol_filter with width=9, deriv=1, polyorder=1, mode=interp
+DEBUG: Delta features shape: (13, 5670)
+DEBUG: Delta features range: [-42.359434, 54.676008]
+DEBUG: Computing delta-delta features
+DEBUG: Computing delta features - order: 2, width: 9, mode: interp
+DEBUG: Input data shape: (13, 5670)
+DEBUG: Using savgol_filter with width=9, deriv=2, polyorder=2, mode=interp
+DEBUG: Delta features shape: (13, 5670)
+DEBUG: Delta features range: [-27.035598, 26.657293]
+DEBUG: Normalizing and concatenating MFCC features
+DEBUG: Normalizing values with shape (13, 5670)
+DEBUG: Original mean: -47.495989, std: 140.129436
+DEBUG: Normalized mean: -0.000000, std: 1.000000
+DEBUG: Normalizing values with shape (13, 5670)
+DEBUG: Original mean: 0.001037, std: 4.645486
+DEBUG: Normalized mean: -0.000000, std: 1.000000
+DEBUG: Normalizing values with shape (13, 5670)
+DEBUG: Original mean: -0.000483, std: 2.188185
+DEBUG: Normalized mean: -0.000000, std: 1.000000
+DEBUG: Combined MFCC features shape: (39, 5670)
+DEBUG: Sequence length: 2835
+DEBUG: Sequences shape: (1, 822)
+DEBUG: Final MFCC output shape: (1, 5670, 39)
+DEBUG: Initializing TFLite interpreter
+INFO: Vx delegate: allowed_cache_mode set to 0.
+INFO: Vx delegate: device num set to 0.
+INFO: Vx delegate: allowed_builtin_code set to 0.
+INFO: Vx delegate: error_during_init set to 0.
+INFO: Vx delegate: error_during_prepare set to 0.
+INFO: Vx delegate: error_during_invoke set to 0.
+******* eval_model() - input_shape: [  1 296  39]
+DEBUG: Input dtype: <class 'numpy.int8'>, Output dtype: <class 'numpy.int8'>
+DEBUG: Input quantization - scale: 0.14385513961315155, zero_point: -3
+DEBUG: Output quantization - scale: 0.37188172340393066, zero_point: -87
+DEBUG: Applying input quantization
+DEBUG: Rounding quantized data
+DEBUG: Data shape before padding: (1, 5670, 39)
+DEBUG: Final data shape: (1, 5670, 39)
+DEBUG: Context: 98, Size: 296, Inner: 100, Data end: 5670
+DEBUG: Starting sliding window inference
+DEBUG: Processing window 1
+DEBUG: First window - start: 0, end: 296, y_start: 0, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+W [HandleLayoutInfer:317]Op 162: default layout inference pass.
+DEBUG: Window output shape: (1, 1, 99, 29)
+DEBUG: Processing window 2
+DEBUG: Middle window - start: 100, end: 396, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 3
+DEBUG: Middle window - start: 200, end: 496, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 4
+DEBUG: Middle window - start: 300, end: 596, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 5
+DEBUG: Middle window - start: 400, end: 696, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 6
+DEBUG: Middle window - start: 500, end: 796, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 7
+DEBUG: Middle window - start: 600, end: 896, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 8
+DEBUG: Middle window - start: 700, end: 996, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 9
+DEBUG: Middle window - start: 800, end: 1096, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 10
+DEBUG: Middle window - start: 900, end: 1196, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 11
+DEBUG: Middle window - start: 1000, end: 1296, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 12
+DEBUG: Middle window - start: 1100, end: 1396, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 13
+DEBUG: Middle window - start: 1200, end: 1496, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 14
+DEBUG: Middle window - start: 1300, end: 1596, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 15
+DEBUG: Middle window - start: 1400, end: 1696, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 16
+DEBUG: Middle window - start: 1500, end: 1796, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 17
+DEBUG: Middle window - start: 1600, end: 1896, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 18
+DEBUG: Middle window - start: 1700, end: 1996, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 19
+DEBUG: Middle window - start: 1800, end: 2096, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 20
+DEBUG: Middle window - start: 1900, end: 2196, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 21
+DEBUG: Middle window - start: 2000, end: 2296, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 22
+DEBUG: Middle window - start: 2100, end: 2396, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 23
+DEBUG: Middle window - start: 2200, end: 2496, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 24
+DEBUG: Middle window - start: 2300, end: 2596, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 25
+DEBUG: Middle window - start: 2400, end: 2696, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 26
+DEBUG: Middle window - start: 2500, end: 2796, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 27
+DEBUG: Middle window - start: 2600, end: 2896, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 28
+DEBUG: Middle window - start: 2700, end: 2996, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 29
+DEBUG: Middle window - start: 2800, end: 3096, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 30
+DEBUG: Middle window - start: 2900, end: 3196, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 31
+DEBUG: Middle window - start: 3000, end: 3296, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 32
+DEBUG: Middle window - start: 3100, end: 3396, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 33
+DEBUG: Middle window - start: 3200, end: 3496, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 34
+DEBUG: Middle window - start: 3300, end: 3596, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 35
+DEBUG: Middle window - start: 3400, end: 3696, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 36
+DEBUG: Middle window - start: 3500, end: 3796, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 37
+DEBUG: Middle window - start: 3600, end: 3896, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 38
+DEBUG: Middle window - start: 3700, end: 3996, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 39
+DEBUG: Middle window - start: 3800, end: 4096, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 40
+DEBUG: Middle window - start: 3900, end: 4196, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 41
+DEBUG: Middle window - start: 4000, end: 4296, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 42
+DEBUG: Middle window - start: 4100, end: 4396, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 43
+DEBUG: Middle window - start: 4200, end: 4496, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 44
+DEBUG: Middle window - start: 4300, end: 4596, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 45
+DEBUG: Middle window - start: 4400, end: 4696, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 46
+DEBUG: Middle window - start: 4500, end: 4796, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 47
+DEBUG: Middle window - start: 4600, end: 4896, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 48
+DEBUG: Middle window - start: 4700, end: 4996, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 49
+DEBUG: Middle window - start: 4800, end: 5096, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 50
+DEBUG: Middle window - start: 4900, end: 5196, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 51
+DEBUG: Middle window - start: 5000, end: 5296, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 52
+DEBUG: Middle window - start: 5100, end: 5396, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 53
+DEBUG: Middle window - start: 5200, end: 5496, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 54
+DEBUG: Middle window - start: 5300, end: 5596, y_start: 49, y_end: 99
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 50, 29)
+DEBUG: Processing window 55
+DEBUG: Final window - start: 5374, end: 5670, y_start: 62, y_end: 148
+DEBUG: Window data shape: (1, 296, 39)
+DEBUG: Window output shape: (1, 1, 86, 29)
+DEBUG: Concatenating window outputs
+DEBUG: Complete output shape: (1, 1, 2835, 29)
+DEBUG: Computing LER and WER
+DEBUG: Computing CTC LER with NumPy
+DEBUG: CTC preparation - tensor shape: (1, 822)
+DEBUG: CTC preparation - y_predict shape: (1, 1, 2835, 29)
+DEBUG: After squeeze: (1, 2835, 29)
+DEBUG: Actual time steps in predictions: 2835
+DEBUG: After transpose: (2835, 1, 29)
+DEBUG: Original sequence lengths from tensor: [2835]
+DEBUG: Labels shape: (1, 821)
+DEBUG: Using actual sequence lengths: [2835]
+DEBUG: Batch 0 valid labels length: 821
+DEBUG: CTC decoder input logits shape: (2835, 1, 29)
+DEBUG: CTC decoder sequence lengths: [2835]
+DEBUG: Using blank label: 28
+DEBUG: Logits min: -8.181398, max: 65.079300
+DEBUG: Logits mean: 25.039011, std: 9.527739
+DEBUG: Max indices shape: (1, 2835)
+DEBUG: Max indices min: 0, max: 28
+DEBUG: Max indices first 10 values: [28 28 28 28 28 28 28 28 28 28]
+DEBUG: Processing batch 0
+DEBUG: Batch 0 sequence length: 2835
+DEBUG: Batch 0 sequence min: 0, max: 28
+DEBUG: Batch 0 decoded sequence length: 691
+DEBUG: Batch 0 decoded min: 0, max: 27
+DEBUG: Total decoded sequences: 1
+DEBUG: True sequence length: 821
+DEBUG: Predicted sequence length: 691
+DEBUG: Computing edit distance between sequences of length 821 and 691
+DEBUG: Edit distance: 304
+DEBUG: Label Error Rate: 0.37028014616321558
+DEBUG: Computing CTC WER with NumPy
+DEBUG: CTC preparation - tensor shape: (1, 822)
+DEBUG: CTC preparation - y_predict shape: (1, 1, 2835, 29)
+DEBUG: After squeeze: (1, 2835, 29)
+DEBUG: Actual time steps in predictions: 2835
+DEBUG: After transpose: (2835, 1, 29)
+DEBUG: Original sequence lengths from tensor: [2835]
+DEBUG: Labels shape: (1, 821)
+DEBUG: Using actual sequence lengths: [2835]
+DEBUG: Batch 0 valid labels length: 821
+DEBUG: CTC decoder input logits shape: (2835, 1, 29)
+DEBUG: CTC decoder sequence lengths: [2835]
+DEBUG: Using blank label: 28
+DEBUG: Logits min: -8.181398, max: 65.079300
+DEBUG: Logits mean: 25.039011, std: 9.527739
+DEBUG: Max indices shape: (1, 2835)
+DEBUG: Max indices min: 0, max: 28
+DEBUG: Max indices first 10 values: [28 28 28 28 28 28 28 28 28 28]
+DEBUG: Processing batch 0
+DEBUG: Batch 0 sequence length: 2835
+DEBUG: Batch 0 sequence min: 0, max: 28
+DEBUG: Batch 0 decoded sequence length: 691
+DEBUG: Batch 0 decoded min: 0, max: 27
+DEBUG: Total decoded sequences: 1
+DEBUG: Converting 821 integers to string
+DEBUG: Input integers min: 0, max: 27
+DEBUG: First 10 integers: [22 14 22 27 22  7  0 19 27  0]
+DEBUG: Alphabet dictionary size: 29 (0-28)
+DEBUG: Converted string length: 821
+DEBUG: Converting 691 integers to string
+DEBUG: Input integers min: 0, max: 27
+DEBUG: First 10 integers: [22  8 11  4 27 22  7  0 19 27]
+DEBUG: Alphabet dictionary size: 29 (0-28)
+DEBUG: Converted string length: 691
+DEBUG: True sentence: 'wow what an audience but if i am being honest i dont care what you think of my talk i dont i care wh...'
+DEBUG: Predicted sentence: 'wile what an audence bo fre bean onest i'll carryu think i mo talk i don't i geurd they arenothink o...'
+DEBUG: Word Error Rate: 0.76506024096385539
+******* Transcribed File: wile what an audence bo fre bean onest i'll carryu think i mo talk i don't i geurd they arenothink o my talk as ot thet ones weh at a saene an get a sshared and i ben that' were most be weo get ar on that alcan e yil here somd o lack an a you landum person scrawn face book bankts fom a quick yes se back and jwoe thousand nih we all have es were little things called attention spansa theron teto witeh geldhem at the dhet im drotb a thing of the lastsim i wantchon eighteen menuate had talk spanias lteraly yeas so the ever a  ad tot keboc qwuith i'nm doa mind an under a mennite go unmforty for second fiht now thet means thout time for one fine joke why ire belones so e'xransie infletion
+******* Letter Error Rate is 0.37028014616321558
+******* Word Error Rate is 0.76506024096385539
+DEBUG: Execution completed
+
