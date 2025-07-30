@@ -4,8 +4,9 @@ Model download link: https://github.com/dscripka/openWakeWord/releases/download/
 
 Instructions for training on custom wakeword are given here:  https://github.com/Mic92/openWakeWord/tree/main
 
-
+```
 $ python alexa_test.py 
+
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 ✓ Alexa model loaded: /home/scmd/tts/wakeword/alexa_v0.1.tflite
 ✓ Input shape: [ 1 16 96]
@@ -36,4 +37,4 @@ INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
    Audio duration: 3.00 seconds
    Processed 291 audio chunks
    Peak detection at: 1.99s
-
+```
