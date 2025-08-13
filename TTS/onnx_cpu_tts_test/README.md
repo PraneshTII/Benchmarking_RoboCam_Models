@@ -1,3 +1,10 @@
+#Download the Piper models and JSON
+```
+wget https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/lessac/medium/en_US-lessac-medium.onnx
+wget https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/lessac/medium/en_US-lessac-medium.onnx.json
+```
+Kitten TTS Models will downloaded during load from the HF Repo: https://huggingface.co/KittenML/kitten-tts-nano-0.1/tree/main
+
 ```
 [scmd@nixos:~/onnx_tts_test]$ python run_tts_benchmark.py 
 🚀 Starting TTS Performance Benchmark
